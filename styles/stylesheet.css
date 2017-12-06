@@ -1,3 +1,40 @@
+
+
+body {
+  background-color: #b1f3fa;
+}
+
 ul {
   list-style: none;
+  justify-content: right;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  border-color: #b1f3fa;
+}
+
+.video-detail {
+  width: 70%;
+}
+
+
+.embedded-video {
+  height: 100%;
+}
+
+.video-main {
+  display: flex;
+  justify-content: space-between;
 }
