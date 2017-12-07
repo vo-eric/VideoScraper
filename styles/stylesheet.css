@@ -1,5 +1,5 @@
 body {
-  background-color: #b1f3fa;
+  background-color: black;
 }
 
 ul {
@@ -22,13 +22,15 @@ iframe {
   width: 100%;
   height: 100%;
   margin-top: 15px;
-  border-color: #b1f3fa;
+  border-color: black;
+  border-radius: 10px;
 }
 
 li {
   margin: 0 0 5px 0;
   display: flex;
-  font-family: 'Lato' , sans-serif;
+  color: white;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
@@ -36,12 +38,28 @@ li:hover {
   cursor: pointer;
 }
 
+header {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 3px;
+}
+
+img {
+  margin: 20px 20px 0 0;
+  height: 5%;
+}
+
 .search-bar {
   margin: 10px 5px 0 0;
 }
 
 .video-detail {
-  width: 70%;
+  width: 80%;
 }
 
 .embedded-video {

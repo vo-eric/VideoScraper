@@ -46,5 +46,5 @@ class App extends Component {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<App/>, document.querySelector('#root'));
+  ReactDOM.render(<App />, document.querySelector('#root'));
 });
