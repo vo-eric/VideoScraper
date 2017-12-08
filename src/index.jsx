@@ -33,18 +33,17 @@ class App extends Component {
 
     return (
       <div className="main-page">
-        why
+        <SearchBar onSearchTermChange={videoSearch} />
+        <div className="video-main">
+          <VideoDetail video={this.state.selectedVideo} />
+          <VideoList
+            onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
+            videos={this.state.videos} />
+        </div>
       </div>
     );
   }
 }
-// <SearchBar onSearchTermChange={videoSearch} />
-// <div className="video-main">
-//   <VideoDetail video={this.state.selectedVideo} />
-//   <VideoList
-//     onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
-//     videos={this.state.videos} />
-// </div>
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<App />, document.getElementById('root'));
