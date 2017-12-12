@@ -4,7 +4,7 @@ export default class SearchBar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { term: 'myon and shane'};
+    this.state = { term: ''};
   }
 
   render() {
