@@ -49,7 +49,7 @@ h1 {
   letter-spacing: 3px;
 }
 
-img {
+.log {
   margin: 20px 20px 0 0;
   height: 5%;
 }
@@ -67,6 +67,15 @@ img {
 }
 
 .video-main {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+img:hover {
+  transform: scale(1.3);
+}
+
+img {
+  transition: all .4s;
 }
