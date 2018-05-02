@@ -7,7 +7,6 @@ const VideoDetail = ({video}) => {
 
   const videoId = video.id.videoId;
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-
   return (
     <div className="video-detail">
       <div className="embedded-video">

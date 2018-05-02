@@ -36594,7 +36594,7 @@ var VideoListItem = function VideoListItem(_ref) {
     _react2.default.createElement(
       "div",
       { className: "related-videos-thumbnail" },
-      _react2.default.createElement("img", { src: url })
+      _react2.default.createElement("img", { className: "related-videos-thumb", src: url })
     ),
     _react2.default.createElement(
       "div",

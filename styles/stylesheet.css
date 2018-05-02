@@ -1,104 +1,26 @@
 body {
   background-color: black;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  justify-content: space-between;
-}
-
-input {
-  width: 100%;
-  height: 30px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 20px;
-  outline: none;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-  margin-top: 15px;
-  border-color: black;
-  border-radius: 10px;
-  border: 1px solid white;
-}
-
-li {
-  margin: 0 0 5px 0;
-  display: flex;
-  color: white;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
 }
 
-li:hover {
-  cursor: pointer;
-}
-
+/* Header */
 header {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+span {
   font-weight: 100;
+  font-size: 2.5rem;
   color: white;
   letter-spacing: 5px;
-}
-
-img {
-  margin: 20px 20px 0 0;
-  height: 10%;
-}
-
-.fa-github {
-  font-size: 2em;
-  color: white;
-}
-
-.related-videos-thumb {
-  width: auto%;
-  height: auto%;
-  min-width: 100px;
-  min-height: 100px;
-  transition: all .4s;
-}
-
-.related-videos-thumb:hover {
-  transform: scale(1.25);
-}
-
-.related-videos-text {
-  text-align: left;
-  padding-top: 40px;
-}
-
-.related-video {
-  padding: 5px 0;
-}
-
-.search-bar {
-  margin: 10px 5px 0 0;
-}
-
-.video-detail {
-  width: 80%;
-}
-
-.embedded-video {
-  height: 100%;
-}
-
-.video-main {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .info {
@@ -107,6 +29,80 @@ img {
 
 i {
   color: white;
-  padding: 30px 10px 0 0;
-  font-size: 30px;
+  margin: 0 15px;
+  font-size: 2rem !important;
 }
+
+/* Search Bar */
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.video-main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Embedded Video */
+.video-detail {
+  width: 80%;
+}
+
+.embedded-video {
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+/* Related Videos */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li {
+  display: flex;
+  margin-right: 5px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.related-videos-thumb {
+  margin-right: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.related-videos {
+  width: 20%;
+}
+
+.related-videos-text {
+  text-align: left;
+  align-self: center;
+  font-size: 1.1rem;
+}
+
+.related-video {
+  padding: 5px 5px 5px 0;
+}
+
