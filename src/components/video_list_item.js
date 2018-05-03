@@ -5,12 +5,11 @@ const VideoListItem = ({video, onVideoSelect}) => {
 
   return (
     <li onClick={ () => onVideoSelect(video)} className="related-video">
-      <div className="related-videos-thumbnail">
         <img className="related-videos-thumb" src={url} />
-      </div>
-      <div className="related-videos-text">
-        {video.snippet.title}
-      </div>
+        <p className="related-videos-text">
+          {video.snippet.title}
+        </p>
+
     </li>
   );
 };

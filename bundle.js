@@ -36591,13 +36591,9 @@ var VideoListItem = function VideoListItem(_ref) {
     { onClick: function onClick() {
         return onVideoSelect(video);
       }, className: "related-video" },
+    _react2.default.createElement("img", { className: "related-videos-thumb", src: url }),
     _react2.default.createElement(
-      "div",
-      { className: "related-videos-thumbnail" },
-      _react2.default.createElement("img", { className: "related-videos-thumb", src: url })
-    ),
-    _react2.default.createElement(
-      "div",
+      "p",
       { className: "related-videos-text" },
       video.snippet.title
     )
@@ -36632,7 +36628,6 @@ var VideoDetail = function VideoDetail(_ref) {
 
   var videoId = video.id.videoId;
   var embedUrl = "https://www.youtube.com/embed/" + videoId;
-
   return _react2.default.createElement(
     "div",
     { className: "video-detail" },
