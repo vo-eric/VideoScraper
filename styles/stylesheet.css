@@ -126,6 +126,8 @@ li {
 
 .related-video {
     margin: 5px 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media only screen and (max-width: 500px) {
