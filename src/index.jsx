@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -6,6 +7,8 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+
+dotenv.config();
 
 class App extends Component {
   constructor(props) {
@@ -18,15 +21,12 @@ class App extends Component {
   }
 
   videoSearch(term) {
-    YTSearch(
-      { key: 'AIzaSyBhlx6f-XRjrT0MWLxT2vfaxrNSOIKIPnY', term: term },
-      videos => {
-        this.setState({ videos });
-        if (!this.state.selectedVideo) {
-          this.setState({ selectedVideo: videos[0] });
-        }
+    YTSearch({ key: process.env.REACT_APP_API_KEY, term }, videos => {
+      this.setState({ videos });
+      if (!this.state.selectedVideo) {
+        this.setState({ selectedVideo: videos[0] });
       }
-    );
+    });
   }
 
   render() {
