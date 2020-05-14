@@ -4,9 +4,12 @@ const VideoItem = ({ video, onVideoSelect }) => {
   const url = video.snippet.thumbnails.medium.url;
 
   return (
-    <li onClick={() => onVideoSelect(video)} className='related-video'>
+    <li
+      onClick={() => onVideoSelect(video)}
+      className='related-videos__video-item'
+    >
       <img
-        className='related-videos-thumb'
+        className='related-videos__thumbnail'
         src={url}
         alt={video.snippet.title}
       />

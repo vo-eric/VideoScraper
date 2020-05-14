@@ -20,12 +20,13 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <div className='search-bar'>
+      <div className='search'>
         <form onSubmit={this.onSubmit}>
           <input
             value={this.state.term}
             placeholder='Enter a search term'
             onChange={this.onInputChange}
+            className='search-bar'
           />
         </form>
       </div>

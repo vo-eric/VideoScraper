@@ -9,12 +9,9 @@ const VideoDetail = ({ video }) => {
 
   return (
     <div className='video-detail'>
-      <div className='embedded-video'>
+      <div className='video-detail__embedded-video'>
         <iframe src={videoUrl} />
       </div>
-
-      <h1>{video.snippet.title}</h1>
-      <h1>{video.snippet.description}</h1>
     </div>
   );
 };
