@@ -57,6 +57,7 @@ body {
     text-align: center;
     font-size: 2rem;
     outline: none;
+    font-weight: 100;
 }
 
 .video-content {
@@ -78,7 +79,7 @@ body {
 iframe {
     width: 100%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 8px;
 }
 
@@ -100,7 +101,7 @@ iframe {
     color: var(--color-white);
     font-weight: 300;
     cursor: pointer;
-    overflow: auto;
+    height: 100%;
 }
 
 .related-videos__thumbnail {
@@ -110,68 +111,56 @@ iframe {
     border-radius: 5px;
 }
 
-.related-videos-text {
+.related-videos__text {
     text-align: left;
     align-self: center;
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 500px) {
-    .logo > img {
-        display: none;
-    }
-
-    span {
+@media only screen and (max-width: 100rem) {
+    .header__wordmark {
         letter-spacing: 2px;
-        font-size: 1.5rem;
+        font-size: 3.5rem;
     }
 
-    input {
-        font-size: 1rem;
+    .fa {
+        font-size: 2.5rem !important;
     }
 
-    .video-main {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .search-bar {
+        padding: 6px;
+    }
+
+    .video-content {
         flex-direction: column;
+        margin-top: 2rem;
     }
 
     .video-detail {
         width: 100%;
-        height: 30vh;
-        margin-bottom: 40px;
-    }
-
-    ul {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        overflow: auto;
-    }
-
-    li {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        height: 60vh;
     }
 
     .related-videos {
-        padding: 0;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .related-videos__video-item {
+        flex-direction: column;
+    }
+
+    .related-videos__thumbnail {
         width: 100%;
     }
 
-    .related-videos::-webkit-scrollbar {
-        display: none;
+    .related-videos__thumbnail:not(:last-of-type) {
+        margin-right: 1rem;
     }
 
-    .related-video {
-        margin-right: 3px;
-    }
-
-    .related-videos-text {
+    .related-videos__text {
         font-size: 1rem;
         padding: 2px;
     }

@@ -13,7 +13,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
         src={url}
         alt={video.snippet.title}
       />
-      <p className='related-videos-text'>{video.snippet.title}</p>
+      <p className='related-videos__text'>{video.snippet.title}</p>
     </li>
   );
 };
