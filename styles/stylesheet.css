@@ -3,12 +3,14 @@
 }
 
 * {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -20,8 +22,14 @@ body {
 }
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -55,7 +63,11 @@ body {
 }
 
 .video-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 4rem;
     height: 75vh;
@@ -79,8 +91,15 @@ iframe {
 
 .related-videos {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 25%;
 }
@@ -90,6 +109,8 @@ iframe {
 }
 
 .related-videos__video-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 5px;
     color: var(--color-white);
@@ -106,6 +127,8 @@ iframe {
 
 .related-videos__text {
     text-align: left;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     font-size: 1.5rem;
 }
@@ -126,6 +149,9 @@ iframe {
     }
 
     .video-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 2rem;
     }
@@ -136,12 +162,18 @@ iframe {
     }
 
     .related-videos {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         width: 100%;
         margin-top: 2rem;
     }
 
     .related-videos__video-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         max-width: 20rem;
     }
@@ -179,6 +211,9 @@ iframe {
     }
 
     .related-videos {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 25%;
         overflow: scroll;
@@ -187,6 +222,9 @@ iframe {
 
     .related-videos__video-item {
         width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin: 0;
         max-width: none;
